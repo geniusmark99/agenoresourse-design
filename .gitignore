@@ -1,0 +1,11 @@
+# Ignore npm package-lock file
+package-lock.json
+
+# Ignore Tailwind CSS configuration file
+tailwindcss.config.js
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore npm package.json file (optional, depends on your workflow)
+package.json
