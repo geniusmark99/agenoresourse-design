@@ -26,7 +26,10 @@
     Yellow: #FFFF00
     Orange: #FFA500
     */
-    
+    body {
+    overflow-x: hidden;
+    }
+
     .ageno-pricing {
     display: flex;
     flex-direction: column;
@@ -116,7 +119,8 @@
     
     .top-header,
     .footer-widget {
-    background: linear-gradient(to right, rgba(217,119,6,0.89),rgba(180,83,9,0.89));
+    /* background: linear-gradient(to right, rgba(217,119,6,0.89),rgba(180,83,9,0.89)); */
+    background-color: #D97706E3;
     background-repeat: repeat-x;
     background-size: 100%;
     }
@@ -171,9 +175,7 @@
     }
     
     .duration-desc {
-    /* width: 100px; */
     white-space: nowrap;
-    /* background-color: red; */
     }
     
     .price-input-content{
@@ -243,7 +245,8 @@
     }
     
     .top-header {
-    background: linear-gradient(to right, rgba(217,119,6,0.89),rgba(180,83,9,0.89));
+    /* background: linear-gradient(to right, rgba(217,119,6,0.89),rgba(180,83,9,0.89)); */
+    background-color: #D97706E3;
     background-repeat: repeat-x;
     background-size: 100%;
     }
