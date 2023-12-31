@@ -1,0 +1,272 @@
+:root {
+    --white: #fff;
+    --black: #000;
+    --amber-bg:#FEB916;
+    --amber-bg-2:#C87223;
+    --amber-100: rgb(254 243 199);
+    --amber-400: rgb(251 191 36);
+    --amber-700: rgb(180 83 9);
+    --orange-300: rgb(253 186 116);
+    --orange-400: rgb(251 146 60);
+    --orange-500: rgb(249 115 22);
+    --1rem: 1rem;
+    }
+    /* 
+    Primary Color: Deep Green or Earthy Brown
+    
+    Deep Green: #006400
+    Earthy Brown: #8B4513
+    Secondary Colors: Silver/Gray, Teal, and Gold/Copper
+    
+    Silver/Gray: #808080
+    Teal: #008080
+    Gold/Copper: #FFD700
+    Accent Colors: Yellow or Orange
+    
+    Yellow: #FFFF00
+    Orange: #FFA500
+    */
+    
+    .ageno-pricing {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px 0;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    }
+    
+    .ageno-pricing h1.plan-title{
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.9rem;
+    }
+    
+    .ageno-pricing-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    width: 100%;
+    justify-content: center;
+    }
+    
+    
+    
+    .pricing-list {
+    background-color: transparent;
+    transform: scale(0.98);
+    color: var(--black);
+    border-radius: var(--1rem);
+    padding: 14px 20px;
+    margin: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+    border: 2px solid var(--orange-300);
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    width: calc(100% - 60px);
+    transition: background-color 0.6s, box-shadow 0.5s, transform 0.49s;
+    
+    }
+    
+    .pricing-list:hover {
+    background-color: var(--orange-400);
+    transform: scale(1);
+    color: var(--white);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    /* transition: background-color 0.5s; */
+    cursor: pointer;
+    }
+    
+    .pricing-list:hover .pricing-type-desc,
+    .pricing-list:hover .default-price
+    {
+    color: var(--white);
+    }
+    
+    .pricing-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    }
+    
+    .pricing-type .pricing-type-desc{
+     text-align: center;
+     font-size: 1.5rem;
+     font-weight: 600;
+     color: var(--amber-bg-2);
+    }
+    
+    .default-price {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     gap: 0 5px;
+     font-size: 14px;
+     margin-top: 20px;
+     color: var(--orange-500);
+    }
+    
+    
+    .top-header,
+    .footer-widget {
+    background: linear-gradient(to right, rgba(217,119,6,0.89),rgba(180,83,9,0.89));
+    background-repeat: repeat-x;
+    background-size: 100%;
+    }
+    
+        .hero-section {
+        background: linear-gradient(rgba(251, 191, 36, 0.5),rgba(245, 158, 11, 0.5)), url('../images/aerial-view-village.jpg');
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-color: red; */
+        /* background-size: 50% 50%; */
+        }
+    
+        .minerals-assets-img {
+         object-fit: contain;
+         background-repeat: no-repeat;
+         background-size: cover;
+         transform: scale(0.9);
+         transition: transform 0.5s;
+         overflow: hidden;
+         width: 100%;
+         height: 200px;
+         border-radius: 10px;
+         padding: 16px;
+         display: flex;
+         text-align: center;
+         justify-content: center;
+    
+        }
+    
+    
+    .naira-currency{
+        font-weight: 600;
+    }
+    
+    .default-amount {
+    font-size: 1.2rem;
+    font-weight: 700;
+    }
+    
+    .pricing-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 20px;
+    }
+    
+    .pricing-duration-assets {
+    display: flex;
+    align-items: center;
+    }
+    
+    .duration-desc {
+    width: 100px;
+    white-space: nowrap;
+    /* background-color: red; */
+    }
+    
+    .price-input-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    
+    .pluralize{
+    display: none;   
+    }
+    
+    .pluralize.show{
+    display: block;
+    }
+    
+    
+    .pricing-amount {
+    width: 110px;
+    }
+    
+    .choose-btn {
+    width: 100%;
+    border-radius: var(--1rem);
+    padding: 10px 12px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    background-color: var(--white);
+    border: 1px solid var(--orange-500);
+    color: var(--orange-500);
+    transition: background-color 0.6s;
+    }
+    
+    .choose-btn:hover {
+    /* background-image: linear-gradient(to right, var(--amber-400), var(--amber-bg-2)); */
+    color: var(--white);
+    background-color: var(--orange-500);
+    /* background-color: var(--amber-700); */
+    }
+    
+    input[type="number"] {
+    width: 30px;
+    padding: 5px;
+    text-align: center;
+    outline: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    }
+    
+    input[type="number"]:focus {
+        border: none;
+        outline: none;
+    }
+    
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+    
+    input[type="number"] {
+    appearance: textfield; /* Firefox support */
+    }
+    
+    .top-header {
+    background: linear-gradient(to right, rgba(217,119,6,0.89),rgba(180,83,9,0.89));
+    background-repeat: repeat-x;
+    background-size: 100%;
+    }
+    
+    .hero-section {
+    background: linear-gradient(rgba(251, 191, 36, 0.5),rgba(245, 158, 11, 0.5)), url('../images/aerial-view-village.jpg');
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: red; */
+    /* background-size: 50% 50%; */
+    }
+    
+    
+    @media (min-width: 800px) {
+    .ageno-pricing-list {
+    flex-direction: row;
+    gap: 0 20px;
+    }
+    .pricing-list {
+    width: 33.3%;
+    }
+    .default-price {
+    font-size: 1.2rem;
+    }
+    .default-amount {
+        font-size: 1.5rem;
+    }
+    }
